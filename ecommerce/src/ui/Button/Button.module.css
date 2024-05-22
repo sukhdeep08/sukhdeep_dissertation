@@ -1,0 +1,26 @@
+.btn,
+.btn:link,
+.btn:visited {
+  width: auto;
+  height: 25px;
+  padding: 2rem 2.5rem;
+  background-color: #fafafa;
+  color: #111517;
+
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none !important; /* Remove underline */
+}
+
+.btnFlex {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}

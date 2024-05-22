@@ -1,0 +1,51 @@
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  padding: 2rem;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  height: 5rem;
+  width: 19rem;
+  position: relative;
+  cursor: pointer;
+  justify-content: space-between;
+  margin: 0rem 6rem;
+  margin-top: 10rem;
+}
+.filterMenu {
+  position: absolute;
+  z-index: 5;
+  width: 190px;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 4px;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  top: calc(100% + 3px); /* Position below the filter */
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  left: 0; /* Align with the left edge of the filter */
+}
+
+.filterMenu p:hover {
+  color: gray;
+}
+
+.p {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .filter {
+    min-width: 18rem;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+    margin: 0rem 3rem;
+    margin-top: 2rem;
+  }
+}
